@@ -1,6 +1,6 @@
 {
   "name": "tini-module",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "publishConfig": {
     "access": "public"
   },
@@ -13,7 +13,7 @@
   "scripts": {
     "build": "tsc",
     "prepublishOnly": "npm run build",
-    "postinstall": "echo 'Postinstall script executed, but no output was generated.'"
+    "postinstall": "node dist/hello.js"
   },
   "files": [
     "dist"
