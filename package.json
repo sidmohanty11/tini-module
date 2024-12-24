@@ -1,6 +1,6 @@
 {
   "name": "tini-module",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "publishConfig": {
     "access": "public"
   },
@@ -12,7 +12,8 @@
   "main": "index.js",
   "scripts": {
     "build": "tsc",
-    "prepublishOnly": "npm run build"
+    "prepublishOnly": "npm run build",
+    "postinstall": "node src/hello.js"
   },
   "files": [
     "dist"
